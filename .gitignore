@@ -1,0 +1,30 @@
+/bin
+/out
+
+#debug specific
+*.log
+
+#intellij specific
+.idea/
+*.iml
+*.ipr
+*.iws
+
+#eclipse specific
+.metadata/*
+.settings
+
+# java specific
+*.bak
+*.class
+
+#gradle specific
+.gradle/
+
+.classpath
+.project
+
+#windows Junk
+*.ini
+[Tt]humbs.db
+*.DS_Store
