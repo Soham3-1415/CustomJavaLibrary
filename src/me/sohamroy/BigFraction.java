@@ -63,7 +63,7 @@ public final class BigFraction extends Number implements Comparable<BigFraction>
         return add(val.negate());
     }
 
-    private BigFraction negate() {
+    public BigFraction negate() {
         return reduce(numerator.negate(),denominator);
     }
 
