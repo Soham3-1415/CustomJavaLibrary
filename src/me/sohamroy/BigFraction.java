@@ -1,4 +1,4 @@
-package com.company;
+package me.sohamroy;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
