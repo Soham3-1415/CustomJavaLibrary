@@ -1,1 +1,1 @@
-IrrationalNumbers
+Custom Java library
