@@ -71,7 +71,7 @@ public final class BigFraction extends Number implements Comparable<BigFraction>
         return multiply(val.reciprocal());
     }
 
-    private BigFraction multiply(BigFraction val) {
+    public BigFraction multiply(BigFraction val) {
         return reduce(numerator.multiply(val.numerator),denominator.multiply(val.denominator));
     }
 
