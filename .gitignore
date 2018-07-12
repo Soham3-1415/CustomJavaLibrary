@@ -28,3 +28,6 @@
 *.ini
 [Tt]humbs.db
 *.DS_Store
+
+#KDE directory file
+.directory
