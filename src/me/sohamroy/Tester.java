@@ -5,7 +5,7 @@ import java.math.BigInteger;
 
 public class Tester {
 	static long startTime = 0;
-	public static void main(String[] args) {
+	public static void BigFractionTest () {
 		BigFraction testFraction1 = new BigFraction(BigInteger.valueOf(1),BigInteger.valueOf(2));
 		BigFraction testFraction2 = new BigFraction(BigInteger.valueOf(1),BigInteger.valueOf(6));
 
@@ -44,6 +44,15 @@ public class Tester {
 		startTiming();
 		System.out.println(new BigFraction(BigDecimal.valueOf(.75),BigDecimal.valueOf(.25)));
 		printTime();
+	}
+
+	public static void UnionFindTest() {
+
+	}
+
+	public static void main(String[] args) {
+		//BigFractionTest();
+		UnionFindTest();
 	}
 
 	private static void printTime(){
