@@ -2,6 +2,8 @@ package me.sohamroy;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.util.HashMap;
+import java.util.HashSet;
 
 public class Tester {
 	static long startTime = 0;
@@ -47,11 +49,24 @@ public class Tester {
 	}
 
 	public static void UnionFindTest() {
-
+		startTiming();
+		HashSet<Integer> set = new HashSet<>();
+		for (int i = 0; i < 1000; i++) {
+			set.add(i);
+		}
+		HashMap<Integer,Integer> parentMap = UnionFind.createMap(set);
+		HashMap<Integer,Integer> rankMap = UnionFind.createMap(set);
+		System.out.println(UnionFind.size(parentMap));
+		UnionFind.union(parentMap,rankMap,5,6);
+		UnionFind.union(parentMap,rankMap,777,444);
+		System.out.println(UnionFind.find(parentMap,777));
+		System.out.println(UnionFind.find(parentMap,444));
+		System.out.println(UnionFind.size(parentMap));
+		printTime();
 	}
 
 	public static void main(String[] args) {
-		//BigFractionTest();
+		BigFractionTest();
 		UnionFindTest();
 	}
 
