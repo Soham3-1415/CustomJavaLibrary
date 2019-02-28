@@ -56,7 +56,7 @@ public class Tester {
 	}
 
 	private static void printTime(){
-		System.out.println("Time Elapsed: " + (System.nanoTime() - startTime) / 1000000.0 + " seconds\n");
+		System.out.println("Time Elapsed: " + (System.nanoTime() - startTime) / 1000000000.0 + " seconds\n");
 	}
 
 	private static void startTiming(){
